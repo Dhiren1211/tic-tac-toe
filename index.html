@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        
+        <div class="game-mode-selector">
+            <button class="mode-btn active" id="pvpBtn">Play with Friend</button>
+            <button class="mode-btn" id="pvcBtn">Play with Computer</button>
+        </div>
+
+        <div class="difficulty-selector hidden" id="difficultySelector">
+            <h3>Select Difficulty:</h3>
+            <div class="difficulty-options">
+                <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+                <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+                <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+            </div>
+        </div>
+
+        <div class="game-status" id="gameStatus">Player X's turn</div>
+        <div class="game-board" id="gameBoard"></div>
+        <button class="reset-btn" id="resetBtn">Reset Game</button>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h2 id="modalTitle">Game Over</h2>
+            <p id="modalMessage"></p>
+            <button class="modal-btn" id="modalBtn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
